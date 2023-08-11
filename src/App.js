@@ -6,7 +6,8 @@ import { useState } from 'react';
 function App() {
 
 
-    const [text, setText]= useState('')
+    const [text, setText]= useState('');
+    const [isChecked, setisChecked] = useState(false)
 
     const PRODUCTS = [
         {category: "Fruits", price: "$1", stocked: true, name: "Apple"},
@@ -20,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-     <Searchbar currentText = {text} updateText = {setText} />
+     <Searchbar currentText = {text} updateText = {setText} currentCheckState = {isChecked} updateCheckbox = {setisChecked} />
     <ProductTable products = {PRODUCTS}/>
 
     </div>
