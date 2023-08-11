@@ -1,38 +1,52 @@
+body{
+    display: flex;
+    justify-content: center;
+   
+
+}
 .App {
   text-align: center;
+  margin: 60px 0px;
+  width: 320px;
+  border: 1px solid black;
+}
+.Search{
+    
+    border: 1px solid black;
+
+}
+.Search input {
+    margin: 16px;
+  
+}
+.columns {
+    display: flex;
+    margin: 0px 0px;
+
+}
+.columns p {
+padding: 0px 60px;
+font-weight: 600;
+}
+.fruits-heading {
+    text-decoration: underline;
+    font-weight: 600;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fruits-table {
+    display: flex;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fruits-table p {
+    padding: 4px 60px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.vegetables-heading {
+    font-weight: 600;
+    text-decoration: underline;
 }
+.vegetables-table {
+    display: flex;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.vegetables-table p {
+    padding: 4px 60px;
 }
